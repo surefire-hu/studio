@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "opzioni_assicurazionis",
+  "info": {
+    "singularName": "opzioni-assicurazioni",
+    "pluralName": "opzioni-assicurazionis",
+    "displayName": "opzioni-assicurazioni"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "assicurazioni": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::assicurazioni.assicurazioni"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name"
+    }
+  }
+}
